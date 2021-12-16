@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .container{
@@ -14,22 +15,30 @@ img{
     height: 100%;
 }
 
+        /* HEADER */
 #logo{
     width: 150px;
     border-right: 1px solid rgb(182, 182, 182);
     padding-right: 15px;
 }
 
-a{
-    text-decoration: none;
-    color: rgb(182, 182, 182);
-    margin-right: 15px;
-}
-
+           /* NAV */
 nav{
+    color: rgb(182, 182, 182);
     padding: 25px 0;
 }
 
+a{
+    text-decoration: none;
+    color: currentColor;
+    margin-right: 15px;
+}
+
+a:hover {
+    color: rgb(221, 112, 221);
+}
+
+          /* Pre-Main */
 .container .banner{
     width: 100%;
     height: 450px;
@@ -66,14 +75,29 @@ nav{
     background-color: rgba(0, 0, 0, 0.2);
 }
 
+
+section{
+    padding-top: 15px;
+}
+
+       /* Main - Gestione layout colonne */
 .col > h1{
-    font-size: 35px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.col > span{
+    color: rgb(182, 182, 182);
+}
+
+.module > p{
+    color: rgb(182, 182, 182); 
 }
 
 .col.over{
     padding: 20px 0;
 }
-
+    /* Moduli colonne */
 .col .module-img{
     width: 100%;
     height: 200px;
@@ -92,27 +116,15 @@ nav{
     padding-top: 15px;
 }
 
-.module > h4{
+.module > h6{
+    font-size: 14px;
+    font-weight: 400;
     margin-bottom: 10px;
 }
 
-footer .container{
-    text-align: center;
+p, .col > span{
+    font-size: 14px;
 }
-
-#hearts{
-    color: red;
-    font-size: 25px;
-}
-
-header, footer{
-    padding-top: 15px;
-}
-
-section{
-    padding-top: 15px;
-}
-
 
 .row .col{
     float: left;
@@ -141,4 +153,18 @@ section{
 
 .row {
     margin-bottom: 15px;
+}
+
+        /* FOOTER */
+footer .container{
+    text-align: center;
+}
+
+#hearts{
+    color: red;
+    font-size: 25px;
+}
+
+header, footer{
+    padding-top: 15px;
 }
