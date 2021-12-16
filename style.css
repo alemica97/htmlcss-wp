@@ -10,7 +10,8 @@
 }
 
 img{
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 #logo{
@@ -25,6 +26,42 @@ a{
     margin-right: 15px;
 }
 
+.container .banner{
+    width: 100%;
+    height: 450px;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.banner > img{
+    object-fit: cover;
+    object-position: center;
+}
+
+#pre-main .banner .description{
+    width: 48%;
+    color: white;
+    position: absolute;
+    left: 40px;
+    bottom: 60px;
+    z-index: 10;
+}
+
+.description h1{
+    font-size: 28px;
+}
+
+.banner.overlay::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
 header, footer{
     padding-top: 15px;
 }
@@ -33,10 +70,10 @@ header .container{
     min-height: 80px;
 }
 
-#pre-main .container{
+/* #pre-main .container{
     background-color: chocolate;
     min-height: 350px;
-}
+} */
 
 #main-section .container{
     background-color: mediumpurple;
