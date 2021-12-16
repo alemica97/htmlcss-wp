@@ -16,14 +16,18 @@ img{
 
 #logo{
     width: 150px;
-    border-right: 1px solid grey;
+    border-right: 1px solid rgb(182, 182, 182);
     padding-right: 15px;
 }
 
 a{
     text-decoration: none;
-    color: grey;
+    color: rgb(182, 182, 182);
     margin-right: 15px;
+}
+
+nav{
+    padding: 25px 0;
 }
 
 .container .banner{
@@ -52,7 +56,7 @@ a{
     font-size: 28px;
 }
 
-.banner.overlay::after{
+.overlay::after{
     content: "";
     position: absolute;
     top: 0;
@@ -62,36 +66,53 @@ a{
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-header, footer{
+.col > h1{
+    font-size: 35px;
+}
+
+.col.over{
+    padding: 20px 0;
+}
+
+.col .module-img{
+    width: 100%;
+    height: 200px;
+    font-size: 0;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.module-img > img{
+    object-fit: cover;
+    object-position: center;
+}
+
+.module{
     padding-top: 15px;
 }
 
-header .container{
-    min-height: 80px;
-}
-
-/* #pre-main .container{
-    background-color: chocolate;
-    min-height: 350px;
-} */
-
-#main-section .container{
-    background-color: mediumpurple;
-    min-height: 500px;
+.module > h4{
+    margin-bottom: 10px;
 }
 
 footer .container{
-    background-color: yellowgreen;
-    min-height: 30px;
+    text-align: center;
+}
+
+#hearts{
+    color: red;
+    font-size: 25px;
+}
+
+header, footer{
+    padding-top: 15px;
 }
 
 section{
     padding-top: 15px;
 }
 
-.row > div {
-    background-color: rgb(188, 168, 228);
-}
 
 .row .col{
     float: left;
@@ -104,11 +125,11 @@ section{
 }
 
 .row .col.sidebar {
-    width: 22%;   
+    width: 20%;   
 }
 
 .row .col.content {
-    width: calc(100% - 44% - 30px);
+    width: calc(100% - 40% - 30px);
     margin-left: 15px;
     margin-right: 15px;
 }
@@ -120,8 +141,4 @@ section{
 
 .row {
     margin-bottom: 15px;
-}
-
-.module{
-    padding: 20px;
 }
